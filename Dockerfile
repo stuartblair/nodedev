@@ -9,6 +9,9 @@ RUN apk add --update \
       nodejs \
       build-base
 
+ADD .tmux.conf /root
+ADD .vimrc /root
+
 VOLUME /project
 WORKDIR /project
 
